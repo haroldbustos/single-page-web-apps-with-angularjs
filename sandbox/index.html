@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="myFirstApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+
+    <title>My first AngularJS App</title>
+  </head>
+  <body>
+    <h1>this is the title</h1>
+    <div ng-controller="myFirstController">
+      <p>Type the color: {{colorpick}};</p>
+      <input type="text" ng-model="colorpick" ng-keyup="calculate()" ng-blur="upper()">
+      <p style="background-color:{{colorpick}}">The sum is: {{value}}</p>
+
+    </div>
+
+  </body>
+</html>
